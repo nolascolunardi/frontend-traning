@@ -1,0 +1,44 @@
+.icon-img {
+  width: 100%;
+  background: radial-gradient(#fc3939, #fcdddd, #f4f4f4, #f4f4f4);
+}
+
+.btn-onboarding {
+  color: #f4f4f4;
+  background: #d4407c;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px;
+  width: 100%;
+}
+
+.red {
+  color: #d4407c;
+}
+
+@media screen and (min-width: 600px) {
+  .icon-img {
+    width: 50%;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    gap: 0px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: colum;
+  }
+
+  .icon-img {
+    width: 25%;
+  }
+}

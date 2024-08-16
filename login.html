@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onboarding | Planner</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="h-container">
+        <img src="img/logo.png" alt="Logo da Planner" class="h-img" />
+      </div>
+    </header>
+
+    <div class="container container-icon">
+      <img src="img/login-icon.png" class="icon-img" />
+    </div>
+
+    <div class="container container-text">
+      <p class="txt title green">Planeje tudo na sua mão</p>
+      <form class="form-login" id="form-login">
+        <label class="txt" for="inputEmail">Email</label>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="E-mail"
+          class="form-input"
+          id="inputEmail"
+        />
+
+        <label class="txt" for="inputPassword">Senha</label>
+        <input
+          type="password"
+          name="password"
+          required
+          placeholder="Senha"
+          class="form-input"
+          id="inputPassword"
+        />
+        <p class="txt text-min blue">Esqueci a senha</p>
+        <button type="submit" class="btn" id="btn-login">Login</button>
+        <p class="txt text-min blue">Primeiro acesso? Crie uma conta</p>
+      </form>
+    </div>
+    <script src="scripts/login.js"></script>
+  </body>
+</html>
