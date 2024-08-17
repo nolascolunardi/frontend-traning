@@ -1,0 +1,80 @@
+.icon-img {
+  width: 70%;
+  background: radial-gradient(#3cfc39, #e9fcdd, #f4f4f4, #f4f4f4);
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 5px;
+}
+
+.form-input {
+  box-sizing: border-box;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  padding: 16px 16px;
+  width: 100%;
+}
+.btn {
+  color: #f4f4f4;
+  background: #3cfc39;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px;
+  width: 100%;
+}
+
+.green {
+  color: #3cfc39;
+}
+
+.login-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 10px;
+}
+
+.text-min {
+  align-items: flex-end;
+  font-weight: 600;
+}
+
+.blue {
+  color: #7cc0ff;
+}
+
+@media screen and (min-width: 600px) {
+  .icon-img {
+    width: 30%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+  .login-txt {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .icon-img {
+    width: 14%;
+  }
+
+  .form-input {
+    width: 100%;
+  }
+
+  .login-txt {
+    width: 30%;
+  }
+}
