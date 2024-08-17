@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onboarding | Planner</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+  </head>
+  <body>
+    <header class="container h-user">
+      <div class="h-user">
+        <img src="img/icon-user.png" alt="User Icon" class="h-img" />
+        <p class="txt text-min">Bom dia,<br />Maria Eduarda!</p>
+      </div>
+      <div class="h-img-icon">
+        <img src="img/notification.png" alt="Logout Icon" class="h-img-icon" />
+        <img src="img/config.png" alt="Logout Icon" class="h-img-icon" />
+      </div>
+    </header>
+
+    <div class="container container-text-start">
+      <div class="txt">
+        <p class="title thin">Hoje,</p>
+        <p class="title">Você possui 4 tasks.</p>
+      </div>
+      <br />
+      <input
+        type="search"
+        name="search"
+        required
+        placeholder="Buscar Task"
+        class="search-input"
+        id="inputSearch"
+      />
+    </div>
+
+    <div class="container container-calendar" id="select-day">
+      <img
+        src="img/arrow-l.png"
+        alt="arrow left icon"
+        class="h-img-icon small-icon"
+      />
+      <button class="day" id="day">
+        <p class="txt title t-light">14</p>
+        <p class="txt text-min t-light">quar</p>
+      </button>
+      <button class="day" id="day">
+        <p class="txt title t-light">15</p>
+        <p class="txt text-min t-light">quin</p>
+      </button>
+      <button class="day" id="day">
+        <p class="txt title t-light">16</p>
+        <p class="txt text-min t-light">sext</p>
+      </button>
+      <button class="day" id="day">
+        <p class="txt title t-light">17</p>
+        <p class="txt text-min t-light">sab</p>
+      </button>
+      <img
+        src="img/arrow-r.png"
+        alt="arrow right icon"
+        class="h-img-icon small-icon"
+      />
+    </div>
+
+    <div class="container container-tasks">
+      <div class="task important">
+        <img src="img/progress.png" alt="arrow right icon" class="img-load" />
+        <div class="container-text-center">
+          <a class="txt title light">1</a
+          ><a class="txt text-min light">Reunião com o time</a>
+        </div>
+      </div>
+      <div class="task medium">
+        <img src="img/progress.png" alt="arrow right icon" class="img-load" />
+        <div class="container-text-center">
+          <a class="txt title light">2</a
+          ><a class="txt text-min light">Reunião com o time</a>
+        </div>
+      </div>
+
+      <div class="task low">
+        <img src="img/progress.png" alt="arrow right icon" class="img-load" />
+        <div class="container-text-center">
+          <a class="txt title light">2</a
+          ><a class="txt text-min light">Reunião com o time</a>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/home.js"></script>
+  </body>
+</html>

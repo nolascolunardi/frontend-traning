@@ -1,0 +1,189 @@
+header {
+  display: flex;
+  flex-direction: row;
+  padding-top: 12px;
+  align-items: center;
+}
+.h-user {
+  display: flex;
+  align-items: center;
+}
+.txt {
+  padding: 0px;
+  padding-left: 5px;
+}
+.text-min {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.h-img {
+  width: 20%;
+}
+
+.h-img-icon {
+  width: 35%;
+}
+
+.small-icon {
+  width: 8%;
+}
+.img-load {
+  width: 25%;
+}
+
+.search-input {
+  box-sizing: border-box;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  padding: 16px 16px;
+  width: 100%;
+}
+
+.container-calendar {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.container-text-center {
+  padding-left: 20px;
+}
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  cursor: pointer;
+}
+
+.day.selected {
+  border: 2px solid #a9a9a9;
+  background-color: #a9a9a9;
+  .t-light {
+    color: #f4f4f4;
+  }
+}
+.container-tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.task {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  border-radius: 12px;
+}
+.important {
+  background: rgba(244, 110, 134, 0.6);
+}
+.medium {
+  background: #f9d674;
+}
+.low {
+  background: #73c897;
+}
+@media screen and (min-width: 600px) {
+  .container {
+    padding-inline: 10%;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .small-icon {
+    width: 5%;
+  }
+  .h-img-icon {
+    width: 20%;
+  }
+  .h-img {
+    width: 20%;
+  }
+
+  .text-min {
+    font-size: 16px;
+  }
+
+  .container-calendar {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    column-gap: 5%;
+  }
+
+  .container-tasks {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .task {
+    display: flex;
+    flex-direction: column;
+  }
+  .day {
+    padding: 24px 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding-inline: 10%;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .h-img-icon {
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+  }
+
+  .small-icon {
+    width: 5%;
+  }
+
+  .h-img {
+    width: 15%;
+  }
+  .text-min {
+    font-size: 16px;
+  }
+  .container-calendar {
+    padding: 12px;
+  }
+  .container-text-start {
+    display: flex;
+    justify-content: center;
+    padding-inline: 22%;
+    padding-block: 2%;
+  }
+
+  .container-tasks {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 3em;
+  }
+
+  .task {
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+  }
+  .day {
+    padding: 24px 24px;
+  }
+}
